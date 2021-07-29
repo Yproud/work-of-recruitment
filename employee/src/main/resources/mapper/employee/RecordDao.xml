@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.xuexi.manager.employee.dao.RecordDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.xuexi.manager.employee.entity.RecordEntity" id="recordMap">
+        <result property="epId" column="ep_id"/>
+        <result property="compid" column="compid"/>
+        <result property="epTel" column="ep_tel"/>
+        <result property="createTime" column="create_time"/>
+        <result property="epIsDeleted" column="ep_is_deleted"/>
+        <result property="epSort" column="ep_sort"/>
+        <result property="epName" column="ep_name"/>
+    </resultMap>
+
+
+</mapper>
