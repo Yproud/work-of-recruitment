@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/company/company.iml" filepath="$PROJECT_DIR$/company/company.iml" />
+      <module fileurl="file://$PROJECT_DIR$/employee/employee.iml" filepath="$PROJECT_DIR$/employee/employee.iml" />
+      <module fileurl="file://$PROJECT_DIR$/recruitment-gateway/recruitment-gateway.iml" filepath="$PROJECT_DIR$/recruitment-gateway/recruitment-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/recruitment-third-party/recruitment-third-party.iml" filepath="$PROJECT_DIR$/recruitment-third-party/recruitment-third-party.iml" />
+      <module fileurl="file://$PROJECT_DIR$/recruitment-work.iml" filepath="$PROJECT_DIR$/recruitment-work.iml" />
+      <module fileurl="file://$PROJECT_DIR$/recruitment_common/recruitment_common.iml" filepath="$PROJECT_DIR$/recruitment_common/recruitment_common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/renren-fast/renren-fast.iml" filepath="$PROJECT_DIR$/renren-fast/renren-fast.iml" />
+      <module fileurl="file://$PROJECT_DIR$/renren-generator/renren-generator.iml" filepath="$PROJECT_DIR$/renren-generator/renren-generator.iml" />
+    </modules>
+  </component>
+</project>

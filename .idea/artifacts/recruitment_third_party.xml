@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="recruitment-third-party">
+    <output-path>$PROJECT_DIR$/out/artifacts/recruitment_third_party</output-path>
+    <root id="root">
+      <element id="archive" name="recruitment_third_party.jar">
+        <element id="module-output" name="recruitment-third-party" />
+      </element>
+    </root>
+  </artifact>
+</component>
