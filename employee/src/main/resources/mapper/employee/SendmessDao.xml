@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.xuexi.manager.employee.dao.SendmessDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.xuexi.manager.employee.entity.SendmessEntity" id="sendmessMap">
+        <result property="id" column="id"/>
+        <result property="theme" column="theme"/>
+        <result property="content" column="content"/>
+        <result property="accessory" column="accessory"/>
+        <result property="sender" column="sender"/>
+        <result property="createTime" column="create_time"/>
+        <result property="sendtype" column="sendtype"/>
+        <result property="sendstatus" column="sendstatus"/>
+        <result property="isDeleted" column="is_deleted"/>
+    </resultMap>
+    <update id="updateSendById">
+        update sendmess set sendstatus=1 where id =#{id}
+    </update>
+    <update id="updateByHandle1">
+        update sendmess set sendstatus=2 where id =#{id}
+    </update>
+    <update id="updateByHandle2">
+        update sendmess set sendstatus=3 where id =#{id}
+    </update>
+
+
+</mapper>
