@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.xuexi.manager.company.dao.VideoDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.xuexi.manager.company.entity.VideoEntity" id="videoMap">
+        <result property="id" column="id"/>
+        <result property="videoSourceId" column="video_source_id"/>
+        <result property="videoOriginalName" column="video_original_name"/>
+        <result property="cpId" column="cp_id"/>
+    </resultMap>
+    <delete id="deleteDelById">
+        delete from video where cp_id =#{id};
+    </delete>
+
+
+</mapper>
