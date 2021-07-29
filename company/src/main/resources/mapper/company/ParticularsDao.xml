@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.xuexi.manager.company.dao.ParticularsDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.xuexi.manager.company.entity.ParticularsEntity" id="particularsMap">
+        <result property="id" column="id"/>
+        <result property="particualrs" column="particualrs"/>
+        <result property="createTime" column="create_time"/>
+        <result property="modifyTime" column="modify_time"/>
+        <result property="isDeleted" column="is_deleted"/>
+        <result property="telephone" column="telePhone"/>
+    </resultMap>
+    <update id="update1ById">
+        UPDATE hr_particulars set auditstatus=1 where id=#{id}
+    </update>
+    <select id="selectParticularInfoById" resultType="com.xuexi.manager.company.entity.ParticularsEntity">
+        SELECT * FROM `hr_particulars` where telePhone=#{id} and is_deleted=0
+    </select>
+    <select id="selectByPhone" resultType="com.xuexi.manager.company.entity.ParticularsEntity">
+        SELECT * FROM `hr_particulars` where telePhone=#{phone}
+    </select>
+    <select id="selectByName" resultType="java.lang.Integer">
+        SELECT ep_id FROM `hr_employee` where ep_name=#{name};
+    </select>
+
+
+</mapper>
