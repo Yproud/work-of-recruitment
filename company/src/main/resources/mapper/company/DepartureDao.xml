@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.xuexi.manager.company.dao.DepartureDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.xuexi.manager.company.entity.DepartureEntity" id="departureMap">
+        <result property="dpId" column="dp_id"/>
+        <result property="dpName" column="dp_name"/>
+        <result property="dpInstruction" column="dp_instruction"/>
+        <result property="createTime" column="create_time"/>
+        <result property="modifyTime" column="modify_time"/>
+        <result property="dpEmployeeStatus" column="dp_employee_status"/>
+        <result property="dpWorkTime" column="dp_work_time"/>
+        <result property="dpTel" column="dp_tel"/>
+    </resultMap>
+    <update id="updateStatus">
+        update hr_departure set dp_employee_status =1 where dp_id=#{id}
+    </update>
+    <update id="updateStatusFail">
+        update hr_departure set dp_employee_status =2 where dp_id=#{id}
+    </update>
+    <select id="departureInfo" resultType="com.xuexi.manager.company.entity.DepartureEntity">
+        SELECT * FROM `hr_departure` where dp_tel=#{dpId} and dp_employee_status=1
+    </select>
+
+
+</mapper>
